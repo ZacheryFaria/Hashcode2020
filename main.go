@@ -292,28 +292,9 @@ func sortBooks(books []int) []int {
 }
 
 func main() {
-	// files := []string{
-	// 	"a_example.txt",
-	// 	"b_read_on.txt",
-	// 	"c_incunabula.txt",
-	// 	"d_tough_choices.txt",
-	// 	"e_so_many_books.txt",
-	// 	"f_libraries_of_the_world.txt",
-	// }
 
 	flag.Parse()
 	args := flag.Args()
-
-	if len(args) < 1 {
-		fmt.Println("GIVE ARGUMENTS FUCKER!!!")
-		os.Exit(69)
-	}
-
-	// for _, v := range files {
-	// 	readFile("input/" + v)
-
-	// 	fmt.Printf("%+v\n", metadata)
-	// }
 
 	readFile(args[0])
 
@@ -331,5 +312,4 @@ func main() {
 
 	solve()
 	printOutput()
-	// fmt.Printf("%+v\n"``, metadata)
 }
